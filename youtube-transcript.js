@@ -18,7 +18,7 @@ const prompt = ChatPromptTemplate.fromTemplate(
 )
 
 const loader = YoutubeLoader.createFromUrl(
-  "https://www.youtube.com/watch?v=fbg3rwZW3zE&list=PL4HikwTaYE0EG379sViZZ6QsFMjJ5Lfwj&index=5",
+  "https://www.youtube.com/watch?v=ROrtQLKvj4w",
   {
     language: "en",
   }
@@ -31,7 +31,7 @@ const chain = await createStuffDocumentsChain({
 })
 
 const response = await chain.invoke({
-  input: "what is this video all about.",
+  input: "what all exercies he talked about",
   context: docs,
 })
 
